@@ -1,11 +1,32 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>
-      Pokedex
-    </ion-title>
+    <ion-title> Pokedex </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <!-- Searchbar with a placeholder -->
+  <ion-searchbar placeholder="Buscar Pokémons"></ion-searchbar>
 
+  <!-- List of Text Items -->
+  <ion-list>
+    <ion-item lines="full">
+      <ion-thumbnail slot="start">
+        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png">
+      </ion-thumbnail>
+      <ion-label>
+        <div>
+          <h3>Bulbasaur</h3>
+          <ion-badge color="success">Grass</ion-badge>
+          <ion-badge color="tertiary">Poison</ion-badge>
+        </div>
+      </ion-label>
+
+      <ion-chip color="success">
+        <ion-label>001</ion-label>
+      </ion-chip>
+
+    </ion-item>
+
+  </ion-list>
 </ion-content>
